@@ -91,12 +91,13 @@ button { font: inherit; }
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 78%;
-  height: 88%;
-  object-fit: contain;
-  object-position: center bottom;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
   transform: translateX(-50%);
   z-index: 2;
+  mix-blend-mode: lighten;
   filter: saturate(.9) contrast(1.03);
 }
 .hero-ring { position: absolute; border: 1px solid rgba(228,187,79,.25); border-radius: 50%; pointer-events: none; z-index: 2; }
